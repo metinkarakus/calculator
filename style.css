@@ -1,0 +1,106 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333;
+    background-color: #659DBD;
+}
+
+#container {
+    margin: 0 auto;
+    width: 400px;
+}
+
+#buttoncontainer {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(5, 90px);
+    text-align: center;
+    background-color: #1d1b1b;
+    border: 1px solid black;
+}
+
+@keyframes clicked {
+    from {
+        background-color: #333;
+    }
+    to {
+        background-color: white;
+        color: #fd9426;
+        font-weight: bolder;
+    }
+}
+
+.animated {
+    animation-name: clicked;
+    animation-duration: 0.09s;
+}
+
+button {
+    display: inline-block;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    border-radius: 15%;
+    background-color: #333;
+    color: white;
+}
+
+button:hover {
+    border: 4px solid white;
+}
+
+#screens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#disp {
+    flex: 10;
+    width: 400px;
+    background-color: #FBEEC1;
+    height: 70px;
+    line-height: 70px;
+    text-align: right;
+    justify-content: space-evenly;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 2%;
+    margin: 0;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#opside {
+    flex: 1;
+    text-align: center;
+    line-height: 70px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    margin: auto;
+    width: 100px;
+    height: 70px;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4285f4;
+}
+
+#disp2 {
+    background-color: #97aabd;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    width: 398px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    color: rgba(255, 255, 255, 0.452);
+    margin-top: 3em;
+}
